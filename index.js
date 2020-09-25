@@ -5,7 +5,7 @@ require('dotenv').config()
 const prefix = process.env.PREFIX;
 
 const errMsj = 'Type "-info" for more information.'
-ppSound = 'assets/lean.mov'
+ppSound = 'assets/alarmSound.mp3'
 
 client.once('ready', () => {
     console.log(client.user.tag);
@@ -99,7 +99,7 @@ client.on('message', async message => {
               break;
         }
         case 'info': {
-            message.channel.send('Hi! These are the commands to control this bot. \n  -ping: Returns "pong" as a response. Does not receive any parameters \n -setTimer: Receive from 1 to 3 numeric parameters. If 1 parameter is received, a timer of n seconds is set. If 2 parameters are received, a timer of n minutes and n seconds is set. If 3 parameters are received, a timer of n hours, n minutes and n seconds is set. e.g. "-setTimer 5 15" will set a timer of 5 minutes and 15 seconds \n -specialTimer: Receive none or 2 parameters. If 2 parameters are received, generate two timers, one of n minutes and the other of n seconds. I none parameters are received, set a 3 minutes and 20 seconds timer by default. \n -kick: Removes the bot from the voice channel.')
+            message.channel.send('Hi! These are the commands to control this bot. \n    -ping: Returns "pong" as a response. Does not receive any parameters \n -setTimer: Receive from 1 to 3 numeric parameters. If 1 parameter is received, a timer of n seconds is set. If 2 parameters are received, a timer of n minutes and n seconds is set. If 3 parameters are received, a timer of n hours, n minutes and n seconds is set. e.g. "-setTimer 5 15" will set a timer of 5 minutes and 15 seconds \n    -specialTimer: Receive none or 2 parameters. If 2 parameters are received, generate two timers, one of n minutes and the other of n seconds. I none parameters are received, set a 3 minutes and 20 seconds timer by default. \n    -kick: Removes the bot from the voice channel.')
         }
         default: {
             message.channel.send(`Oh, I am sorry, but this command does not exist. Remember our commands are case sensitive. ${errMsj}`)
@@ -110,3 +110,6 @@ client.on('message', async message => {
 client.login(process.env.TOKEN);
 
 'Injectar código desde Discord'
+
+'Corregir valores no númericos y negativos
+'
