@@ -111,5 +111,4 @@ client.login(process.env.TOKEN);
 
 'Injectar código desde Discord'
 
-'Corregir valores no númericos y negativos
-'
+'Corregir valores no númericos y negativos'
