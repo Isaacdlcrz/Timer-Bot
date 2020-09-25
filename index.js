@@ -5,7 +5,7 @@ require('dotenv').config()
 const prefix = process.env.PREFIX;
 
 const errMsj = 'Type "-info" for more information.'
-ppSound = 'assets/alarmSound.mp3'
+ppSound = 'assets/alarmSound.mov'
 
 client.once('ready', () => {
     console.log(client.user.tag);
