@@ -1,0 +1,20 @@
+{
+  "name": "discord-bot-timer",
+  "version": "1.0.0",
+  "description": "Timer to take time in Among Us special game mode.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "timer"
+  ],
+  "author": "Isaac De la Cruz",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "discord.js": "^12.3.1",
+    "ffmpeg-static": "^4.2.7",
+    "opusscript": "0.0.7"
+  }
+}
