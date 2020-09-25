@@ -4,6 +4,8 @@
   "description": "Timer to take time in Among Us special game mode.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "say-hi": "echo 'Hi!",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
