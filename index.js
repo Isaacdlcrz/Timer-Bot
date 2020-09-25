@@ -1,11 +1,10 @@
+//const { token, prefix, owner} = require('./config.json')
 const Discord = require('discord.js');
-
+require('dotenv').config()
 const client = new Discord.Client();
-
-const prefix = '-';
+const prefix = process.env.PREFIX;
 
 const errMsj = 'Type "-info" for more information.'
-
 ppSound = 'assets/lean.mov'
 
 client.once('ready', () => {
@@ -22,6 +21,7 @@ client.on('message', async message => {
         var connection = await message.member.voice.channel.join();
       } else {
         message.reply('You need to join a voice channel first!');
+        return;
       }
 
     switch (command) {
@@ -107,4 +107,6 @@ client.on('message', async message => {
     }
 })
 
-client.login('NzU4ODQxOTkxNjU1ODUwMDI0.X200rQ.RYbum6HLco5l4dvyln-7awUZu78');
+client.login(process.env.TOKEN);
+
+'Injectar código desde Discord'
